@@ -67,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.blue.shade50,
                 borderRadius: BorderRadius.circular(12.0),
               ),
+              width: double.infinity,
 
               child: Column(
                 children: [
@@ -89,9 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     child: Column(
                       children: const [
-                        Icon(Icons.water_drop, size: 48.0),
+                        Icon(Icons.cloud, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Humidity'),
+                        Text('Rainfall'),
                       ],
                     ),
                   ),
@@ -127,9 +128,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     child: Column(
                       children: const [
-                        Icon(Icons.cloud, size: 48.0),
+                        Icon(Icons.water_drop, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Cloud Cover'),
+                        Text('Humidity'),
                       ],
                     ),
                   ),
@@ -147,6 +148,44 @@ class _MyHomePageState extends State<MyHomePage> {
                         Icon(Icons.wb_sunny, size: 48.0),
                         SizedBox(height: 8.0),
                         Text('UV Index'),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16.0),
+            Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(16.0),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade50,
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    child: Column(
+                      children: const [
+                        Icon(Icons.dark_mode, size: 48.0),
+                        SizedBox(height: 8.0),
+                        Text('Moon Phase'),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 16.0),
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(16.0),
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade50,
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    child: Column(
+                      children: const [
+                        Icon(Icons.speed, size: 48.0),
+                        SizedBox(height: 8.0),
+                        Text('Pressure'),
                       ],
                     ),
                   ),
