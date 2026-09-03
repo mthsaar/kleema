@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kleema/strings.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Kleema'),
+      home: const MyHomePage(title: Strings.appName),
     );
   }
 }
@@ -71,7 +72,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
               child: Column(
                 children: [
-                  const Text('Temperature', style: TextStyle(fontSize: 16.0)),
+                  const Text(
+                    Strings.temperature,
+                    style: TextStyle(fontSize: 16.0),
+                  ),
                   const SizedBox(height: 16.0),
                   const Icon(Icons.thermostat, size: 48.0),
                 ],
@@ -92,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: const [
                         Icon(Icons.cloud, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Rainfall'),
+                        Text(Strings.rainfall),
                       ],
                     ),
                   ),
@@ -109,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: const [
                         Icon(Icons.air, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Wind Speed'),
+                        Text(Strings.windSpeed),
                       ],
                     ),
                   ),
@@ -130,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: const [
                         Icon(Icons.water_drop, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Humidity'),
+                        Text(Strings.humidity),
                       ],
                     ),
                   ),
@@ -147,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: const [
                         Icon(Icons.wb_sunny, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('UV Index'),
+                        Text(Strings.uvIndex),
                       ],
                     ),
                   ),
@@ -168,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: const [
                         Icon(Icons.dark_mode, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Moon Phase'),
+                        Text(Strings.moonPhase),
                       ],
                     ),
                   ),
@@ -185,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       children: const [
                         Icon(Icons.speed, size: 48.0),
                         SizedBox(height: 8.0),
-                        Text('Pressure'),
+                        Text(Strings.pressure),
                       ],
                     ),
                   ),
@@ -200,13 +204,16 @@ class _MyHomePageState extends State<MyHomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.my_location),
-            label: 'My Location',
+            label: Strings.myLocation,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
-            label: 'Saved Locations',
+            label: Strings.savedLocations,
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.public), label: 'Maps'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.public),
+            label: Strings.maps,
+          ),
         ],
       ),
     );
