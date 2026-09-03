@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kleema/strings.dart';
+import 'package:kleema/services/weather_services.dart';
+import 'package:kleema/services/weather_model.dart';
 
 void main() {
   runApp(const MyApp());
