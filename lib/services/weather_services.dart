@@ -19,7 +19,7 @@ class WeatherService {
       '&timezone=auto',
     );
 
-    final response = await http.get(uri);
+    final response = await http.get(url);
 
     if (response.statusCode == 200) {
       return json.decode(response.body) as Map<String, dynamic>;
