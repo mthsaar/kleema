@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:kleema/strings.dart';
 import 'package:kleema/services/weather_services.dart';
@@ -74,12 +76,25 @@ class _MyHomePageState extends State<MyHomePage> {
 
               child: Column(
                 children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '25°C',
+                        style: const TextStyle(
+                          fontSize: 48.0,
+                          fontWeight: FontWeight.normal,
+                        ),
+                      ),
+                      const Icon(Icons.thermostat, size: 30.0),
+                    ],
+                  ),
+
+                  const SizedBox(height: 16.0),
                   const Text(
                     Strings.temperature,
                     style: TextStyle(fontSize: 16.0),
                   ),
-                  const SizedBox(height: 16.0),
-                  const Icon(Icons.thermostat, size: 48.0),
                 ],
               ),
             ),
