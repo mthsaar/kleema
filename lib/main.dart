@@ -118,8 +118,18 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         const SizedBox(width: 16.0),
                         const Icon(Icons.cloud, size: 16.0),
+                        const SizedBox(width: 16.0),
                         Text(
-                          ' 25°C',
+                          ' 9°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const SizedBox(width: 16.0),
+
+                        Text(
+                          '22°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
