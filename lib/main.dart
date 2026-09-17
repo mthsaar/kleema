@@ -38,34 +38,25 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: const <Widget>[
-            DrawerHeader(
-              decoration: BoxDecoration(color: Colors.deepPurple),
-              child: Text(
-                'Kleema',
-                style: TextStyle(color: Colors.white, fontSize: 24),
-              ),
-            ),
-            ListTile(leading: Icon(Icons.message), title: Text('Messages')),
-            ListTile(
-              leading: Icon(Icons.account_circle),
-              title: Text('Profile'),
-            ),
-            ListTile(leading: Icon(Icons.settings), title: Text('Settings')),
-          ],
-        ),
-      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'My Location',
+                  style: const TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+                const SizedBox(width: 4.0),
+                const Icon(Icons.location_on, size: 16.0),
+              ],
+            ),
+            const SizedBox(height: 16.0),
             Container(
               padding: const EdgeInsets.all(16.0),
               decoration: BoxDecoration(
@@ -96,6 +87,93 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 16.0),
                   ),
                 ],
+              ),
+            ),
+            const SizedBox(height: 16.0),
+
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade50,
+                borderRadius: BorderRadius.circular(12.0),
+              ),
+              width: double.infinity,
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(8.0),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 211, 227, 239),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Today',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const SizedBox(width: 16.0),
+                        const Icon(Icons.cloud, size: 16.0),
+                        Text(
+                          ' 25°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const Icon(Icons.thermostat, size: 16.0),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 8.0),
+                  Container(
+                    padding: const EdgeInsets.all(8.0),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 211, 227, 239),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Tomorrow: 25B°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const SizedBox(width: 16.0),
+                        const Icon(Icons.cloud, size: 16.0),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 8.0),
+                  Container(
+                    padding: const EdgeInsets.all(8.0),
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 211, 227, 239),
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Day XX: 25C°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const SizedBox(width: 16.0),
+                        const Icon(Icons.thermostat, size: 16.0),
+                      ],
+                    ),
+                  ),
+                ], //children
               ),
             ),
             const SizedBox(height: 16.0),
