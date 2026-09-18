@@ -1,18 +1,17 @@
 # kleema
 
-A new Flutter project.
+An app designed to be your weather companion, simple and intuitive.
 
-## Getting Started
+## Features
+The Kleema app provides information like temperature, windspeed, humidity of your current location. 
+This app also allows to save other locations, providing the same informations.
+The weather data is provide thru open source API server.
 
-This project is a starting point for a Flutter application.
+## Design
+Material design guidelines is followed in order to guarantee a simple, clean and familiar experience.
 
-A few resources to get you started if this is your first Flutter project:
+## Modularity
+Due to Flutter's capacity, the Kleema app is designed to work in the web, on Android and in iOS devices.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 # kleema
