@@ -150,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
-                          'Tomorrow: 25B°C',
+                          'Tomorrow',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
@@ -158,6 +158,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         const SizedBox(width: 16.0),
                         const Icon(Icons.cloud, size: 16.0),
+                        const SizedBox(width: 16.0),
+                        Text(
+                          ' 9°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const SizedBox(width: 16.0),
+
+                        Text(
+                          '22°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const Icon(Icons.thermostat, size: 16.0),
                       ],
                     ),
                   ),
@@ -172,13 +190,31 @@ class _MyHomePageState extends State<MyHomePage> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
-                          'Day XX: 25C°C',
+                          'Day XX',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
                           ),
                         ),
                         const SizedBox(width: 16.0),
+                        const Icon(Icons.cloud, size: 16.0),
+                        const SizedBox(width: 16.0),
+                        Text(
+                          ' 9°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        const SizedBox(width: 16.0),
+
+                        Text(
+                          '22°C',
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
                         const Icon(Icons.thermostat, size: 16.0),
                       ],
                     ),
