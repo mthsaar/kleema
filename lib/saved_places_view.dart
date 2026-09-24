@@ -1,40 +1,14 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:kleema/strings.dart';
-import 'package:kleema/services/weather_services.dart';
-import 'package:kleema/model/weather_model.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class SavedPlacesView extends StatefulWidget {
+  const SavedPlacesView({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Kleema',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: Strings.appName),
-    );
-  }
+  State<SavedPlacesView> createState() => _SavedPlacesViewState();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _SavedPlacesViewState extends State<SavedPlacesView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,15 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(12.0),
               ),
               width: double.infinity,
-
               child: Column(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         '25°C',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 48.0,
                           fontWeight: FontWeight.normal,
                         ),
@@ -80,7 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       const Icon(Icons.thermostat, size: 30.0),
                     ],
                   ),
-
                   const SizedBox(height: 16.0),
                   const Text(
                     Strings.temperature,
@@ -92,23 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 16.0),
           ],
         ),
-      ),
-
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.my_location),
-            label: Strings.myLocation,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: Strings.savedLocations,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.public),
-            label: Strings.maps,
-          ),
-        ],
       ),
     );
   }
