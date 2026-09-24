@@ -85,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   const SizedBox(height: 16.0),
                   const Text(
-                    Strings.temperature,
+                    Strings.feelslike,
                     style: TextStyle(fontSize: 16.0),
                   ),
                 ],
@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const Icon(Icons.cloud, size: 16.0),
                         const SizedBox(width: 16.0),
                         Text(
-                          ' 9°C',
+                          'Low°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
@@ -131,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const SizedBox(width: 16.0),
 
                         Text(
-                          '22°C',
+                          'High°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const Icon(Icons.cloud, size: 16.0),
                         const SizedBox(width: 16.0),
                         Text(
-                          ' 9°C',
+                          'Low°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const SizedBox(width: 16.0),
 
                         Text(
-                          '22°C',
+                          'High°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
@@ -202,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const Icon(Icons.cloud, size: 16.0),
                         const SizedBox(width: 16.0),
                         Text(
-                          ' 9°C',
+                          'Low°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,
@@ -211,7 +211,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         const SizedBox(width: 16.0),
 
                         Text(
-                          '22°C',
+                          'High°C',
                           style: const TextStyle(
                             fontSize: 16.0,
                             fontWeight: FontWeight.normal,

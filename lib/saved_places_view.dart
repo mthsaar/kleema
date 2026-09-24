@@ -62,7 +62,7 @@ class _SavedPlacesViewState extends State<SavedPlacesView> {
                       ),
                       const SizedBox(width: 16.0),
                       const Text(
-                        'Saved City 1',
+                        Strings.savedCity1,
                         style: TextStyle(
                           fontSize: 32.0,
                           fontWeight: FontWeight.normal,
@@ -106,7 +106,7 @@ class _SavedPlacesViewState extends State<SavedPlacesView> {
                       ),
                       const SizedBox(width: 16.0),
                       const Text(
-                        'Saved City 2',
+                        Strings.savedCity2,
                         style: TextStyle(
                           fontSize: 32.0,
                           fontWeight: FontWeight.normal,

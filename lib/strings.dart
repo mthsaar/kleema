@@ -11,4 +11,7 @@ class Strings {
   static const String appName = 'Kleema';
   static const String maps = 'Maps';
   static const String errorFetchingWeather = 'Error fetching weather data.';
+  static const String savedCity1 = 'Saved City 1';
+  static const String feelslike = 'Feels like';
+  static const String savedCity2 = 'Saved City 2';
 }
