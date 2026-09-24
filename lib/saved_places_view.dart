@@ -120,6 +120,15 @@ class _SavedPlacesViewState extends State<SavedPlacesView> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(
+          Icons.add,
+          size: 28.0, // Tamanho equilibrado para o botão padrão
+          color: Colors.black,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
