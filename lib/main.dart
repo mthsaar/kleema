@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:kleema/strings.dart';
 import 'package:kleema/services/weather_services.dart';
 import 'package:kleema/model/weather_model.dart';
+import 'package:kleema/saved_places_view.dart';
+import 'package:kleema/maps_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -342,11 +344,20 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
 
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.my_location),
-            label: Strings.myLocation,
-          ),
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SavedPlacesView()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MapsView()),
+            );
+          }
+        },
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.list),
             label: Strings.savedLocations,

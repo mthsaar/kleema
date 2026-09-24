@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kleema/strings.dart';
 
-class SavedPlacesView extends StatefulWidget {
-  const SavedPlacesView({super.key});
+class MapsView extends StatefulWidget {
+  const MapsView({super.key});
 
   @override
-  State<SavedPlacesView> createState() => _SavedPlacesViewState();
+  State<MapsView> createState() => _MapsViewState();
 }
 
-class _SavedPlacesViewState extends State<SavedPlacesView> {
+class _MapsViewState extends State<MapsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +20,7 @@ class _SavedPlacesViewState extends State<SavedPlacesView> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  Strings.savedLocations,
+                  Strings.maps,
                   style: const TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.normal,
